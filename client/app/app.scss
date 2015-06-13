@@ -111,6 +111,7 @@ hr {
 
 .intro-text {
     text-transform: uppercase;
+    line-height: 1.4;
     font-size: 1.25em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -133,15 +134,50 @@ footer {
 }
 
 footer p {
+    font-size: 12px;
     margin: 0;
-    padding: 10px 0;
+    padding: 5px 0;
+}
+
+.about-us__info{
+    margin-top: 30px;
+    p{
+        text-align: left;
+        font-size: 15px
+    }
+    .about-us__goodbye{
+        text-align: center;
+    }
+}
+
+.mission__text{
+    p{
+        text-align: left;
+        font-size: 15px
+    }
+}
+
+.mission__img{
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.site-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    opacity: .2;
+    z-index: -1;
 }
 
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
         margin: 0;
-        padding: 15px 0 10px;
+        padding: 15px 0 0;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         font-family: 'Libre Baskerville', serif;
@@ -165,12 +201,20 @@ footer p {
         margin: 0;
         padding: 0 0 10px;
         text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         text-transform: uppercase;
-        font-size: 1.25em;
-        font-weight: 400;
+        font-size: 20px;
+        font-weight: 600;
         letter-spacing: 3px;
         color: #fff;
+    }
+
+    .header__link, .header__link:visited, .header__link:hover, .header__link:active{
+        color: white;
+        text-decoration: none;
+    }
+
+    .header__link:hover{
+        text-decoration: underline;
     }
 
     .navbar {
@@ -208,19 +252,12 @@ footer p {
     }
 
     .about-us__image{
-        width: 50%;
         border: none;
+        width: 100%;
     }
 
     .about-us__outer-container{
         margin-top: 10px;
-    }
-
-    .about-us__info{
-        margin-top: 30px;
-        p{
-            text-align: left;
-        }
     }
 }
 
@@ -238,6 +275,13 @@ footer p {
 .menu__page{
   width: 100%;
   margin-bottom: 2%
+}
+
+@media screen and (min-width:1024px) {
+    .about-us__image{
+        max-width: 560px;
+        max-height: 420px;
+    }
 }
 
 
