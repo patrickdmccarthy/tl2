@@ -173,6 +173,12 @@ footer p {
     z-index: -1;
 }
 
+.main__link-container{
+    margin-bottom: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
@@ -258,6 +264,10 @@ footer p {
 
     .about-us__outer-container{
         margin-top: 10px;
+    }
+
+    .main__link-container{
+        margin-top: 0;
     }
 }
 
